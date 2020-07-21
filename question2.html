@@ -1,0 +1,45 @@
+<html>
+    <head>question-2</head>
+    <body>
+        <script>
+           class User{
+                 constructor(name,age,email){
+            this.name=name;
+            this.age=age;
+            this.email=email;
+            this.coins=0;
+            this.courses=[];
+                 }}
+                 console.log()
+                 
+                 
+                 
+                 class Moderator extends User{
+                     super(name,age,email);
+                      
+                          addCoins(){
+                        let coin=this.coins++;
+                        console.log('your coins now ${coin}');
+                          }
+                          deleteCoins(){
+                        let delcoins= this.addCoins.coin.filter(cn=>cn-1);
+                    
+                        console.log(`your coins deleted${delcoins}`);
+                          
+                          console.log(this.addCoins(),this.deleteCoins());
+                          }
+                 }
+                
+
+                class Admin extends moderator{
+                    addCourse(user,course){
+                        user.courses.push(course)
+                    }
+                }
+               
+
+                 
+            
+        </script>
+    </body>
+</html>
